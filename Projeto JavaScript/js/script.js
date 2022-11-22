@@ -18,10 +18,12 @@ let tarefas = [
 
 function redenrizarTarefas() {
     for ( tarefa of tarefas ) {
-        let itemLista = document.createAttribute('li');   // Criar item da lista
+        let itemLista = document.createElement('li');   // Criar item da lista
         itemLista.setAttribute('class', 'list-group-item list-group-item-action');    // Adicionar classes no item da lista
         let itemTexto = document.createTextNode(tarefa);    //Criar um texto
         itemLista.appendChild(itemTexto);   // Adicionar o texto no item da lista
         lista.appendChild(itemLista);   // Adicionar o item da lista na lista
     }
 }
+
+redenrizarTarefas();
