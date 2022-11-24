@@ -1,0 +1,17 @@
+{
+  "name": "JavaScript",
+  "version": "1.0.0",
+  "description": "aula de JS",
+  "main": "index.js",
+  "repository": "https://github.com/Cristian-Nascimento/JavaScript.git",
+  "author": "Cristian Nascimento <Cristian-Nascimento>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2"
+  },
+  "scripts": {
+    "dev": "babel ./main.js -o ./bundle.js -w"
+  }
+}
